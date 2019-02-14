@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单管理</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">订单管理</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>商品交易查询</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="row form-horizontal">
+                                    <div class="col-sm-6 m-b-xs">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">订单创建时间</label>
+                                            <div class="col-sm-9">
+                                                <div class="input-daterange input-group">
+                                                    <input type="text" class="form-control" name="start" id="get_start">
+                                                    <span class="input-group-addon">至</span>
+                                                    <input type="text" class="form-control" name="end" id="get_end">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button href="button" class="btn btn-success">今日</button>
+                                        <button href="button" class="btn btn-white">昨日</button>
+                                        <button href="button" class="btn btn-white">最近7天</button>
+                                        <button href="button" class="btn btn-white">最近30天</button>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="row form-horizontal">
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">门店</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="搜索门店" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">用户</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="请输入用户手机号" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-horizontal">
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">订单号</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">交易号</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-horizontal">
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">套餐名称</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">支付平台</label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-control" name="account">
+                                                        <option>不限</option>
+                                                        <option>微信APP</option>
+                                                        <option>微信公众号</option>
+                                                        <option>支付宝</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-horizontal">
+                                        <div class="col-sm-6 m-b-xs">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">金额</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-daterange input-group">
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-addon">至</span>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-b-xs">
+                                    <div class="col-sm-12">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success">全部</button>
+                                            <button type="button" class="btn btn-white">待付款</button>
+                                            <button type="button" class="btn btn-white">成功</button>
+                                            <button type="button" class="btn btn-white">已使用</button>
+                                            <button type="button" class="btn btn-white">已过期</button>
+                                            <button type="button" class="btn btn-white">已退款</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 m-b-xs text-right">
+                                <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="widget yellow-bg">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <i class="fa fa-area-chart fa-2x"></i>
+                                        </div>
+                                        <div class="col-xs-8 text-right">
+                                            <span> 订单总金额 </span>
+                                            <h2 class="font-bold">￥45.7</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget navy-bg">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <i class="fa fa-hourglass-half fa-2x"></i>
+                                        </div>
+                                        <div class="col-xs-8 text-right">
+                                            <span> 实收 </span>
+                                            <h2 class="font-bold">￥45.7</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget lazur-bg">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <i class="fa fa-credit-card fa-2x"></i>
+                                        </div>
+                                        <div class="col-xs-8 text-right">
+                                            <span> 优惠 </span>
+                                            <h2 class="font-bold">￥45.7</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="widget yellow-bg">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <i class="fa fa-pie-chart fa-2x"></i>
+                                        </div>
+                                        <div class="col-xs-8 text-right">
+                                            <span> 记录数 </span>
+                                            <h2 class="font-bold">12</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>创建时间</th>
+                                        <th>套餐/门店</th>
+                                        <th>单号</th>
+                                        <th>买家</th>
+                                        <th>订单金额(元) </th>
+                                        <th>状态</th>
+                                        <th>兑换</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> 交易号: 33874823782374293847 <span class="label label-success">支付宝</span>
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            成功
+                                        </td>
+                                        <td>
+                                            已兑换
+                                            <br/>操作员：sy02
+                                            <br/>时间：2016-12-06 03:00:00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> 交易号: 33874823782374293847 <span class="label label-success">微信APP</span>
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            成功
+                                        </td>
+                                        <td>
+                                            已兑换
+                                            <br/>操作员：sy02
+                                            <br/>时间：2016-12-06 03:00:00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> 交易号: 33874823782374293847 <span class="label label-success">微信公众号</span>
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            成功
+                                        </td>
+                                        <td>
+                                            已兑换
+                                            <br/>操作员：sy02
+                                            <br/>时间：2016-12-06 03:00:00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> -
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            未支付
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> -
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            未支付
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> -
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            未支付
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2016-12-06
+                                            <br/>03:00:00
+                                        </td>
+                                        <td>
+                                            100元100币
+                                            <br/>门店: 世宇乐园(大信店)
+                                        </td>
+                                        <td>
+                                            订单号:00000000001
+                                            <br/> -
+                                        </td>
+                                        <td>
+                                            15626275123
+                                        </td>
+                                        <td>
+                                            0.1 元
+                                            <br/>实收：0.1 元
+                                            <br/>优惠：0 元
+                                        </td>
+                                        <td>
+                                            未支付
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-right">
+                            <div class="btn-group">
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button class="btn btn-white active">1</button>
+                                <button class="btn btn-white ">2</button>
+                                <button class="btn btn-white">3</button>
+                                <button class="btn btn-white">4</button>
+                                <button class="btn btn-white">5</button>
+                                <button class="btn btn-white">6</button>
+                                <button class="btn btn-white">7</button>
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/plugins/prettyfile/bootstrap-prettyfile.js"></script>
+    <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/switchery/switchery.js"></script>
+    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="js/plugins/cropper/cropper.min.js"></script>
+    <script src="js/plugins/layer/laydate/laydate.js"></script>
+    <script type="text/javascript">
+    var get_start = {
+        elem: "#get_start",
+        format: "YYYY-MM-DD hh:mm:ss",
+        min: laydate.now(),
+        max: "2099-06-16 23:59:59",
+        istime: true,
+        istoday: false,
+        choose: function(datas) {
+            get_end.min = datas;
+            get_end.start = datas
+        }
+    };
+    var get_end = {
+        elem: "#get_end",
+        format: "YYYY-MM-DD hh:mm:ss",
+        min: laydate.now(),
+        max: "2099-06-16 23:59:59",
+        istime: true,
+        istoday: false,
+        choose: function(datas) {
+            get_start.max = datas
+        }
+    };
+    laydate(get_start);
+    laydate(get_end);
+    </script>
+</body>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+</html>

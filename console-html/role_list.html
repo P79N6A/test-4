@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色管理</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">角色管理</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>所有角色</h5>
+                <div class="ibox-tools">
+                    <a href="role_edit.html" class="btn btn-primary btn-xs">创建角色</a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <p>你好，欢迎使用角色管理管理</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="contact-box">
+                            <div class="col-sm-4">
+                                <div class="text-center">
+                                    <div class="icon">
+                                        <i class="fa fa-users" style="font-size: 70px;"></i>
+                                    </div>
+                                    <div class="m-t-xs font-bold">测试门店管理员</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    <span class="label label-primary">启用</span>
+                                    <span class="label">无效</span>
+                                </p>
+                                <p>2016-11-03 10:29:03</p>
+                                <address>
+                                    <strong>描述</strong>
+                                    <br> 测试门店管理员
+                                </address>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="user-button">
+                                <a href="role_permission.html" type="button" class="btn btn-primary btn-sm btn-block"> 功能权限</a>
+                                <a href="role_store_permission.html" type="button" class="btn btn-primary btn-sm btn-block"> 门店权限(8)</a>
+                                <a href="role_edit.html" type="button" class="btn btn-primary btn-sm btn-block"> 修改</a>
+                                <a href="#" type="button" class="btn btn-primary btn-sm btn-block">  删除</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-box">
+                            <div class="col-sm-4">
+                                <div class="text-center">
+                                    <div class="icon">
+                                        <i class="fa fa-users" style="font-size: 70px;"></i>
+                                    </div>
+                                    <div class="m-t-xs font-bold">测试门店管理员</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>
+                                    <span class="label label-primary">启用</span>
+                                    <span class="label">无效</span>
+                                </p>
+                                <p>2016-11-03 10:29:03</p>
+                                <address>
+                                    <strong>描述</strong>
+                                    <br> 测试门店管理员
+                                </address>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="user-button">
+                                <a href="role_permission.html" type="button" class="btn btn-primary btn-sm btn-block"> 功能权限</a>
+                                <a href="role_store_permission.html" type="button" class="btn btn-primary btn-sm btn-block"> 门店权限(8)</a>
+                                <a href="role_edit.html" type="button" class="btn btn-primary btn-sm btn-block"> 修改</a>
+                                <a href="#" type="button" class="btn btn-primary btn-sm btn-block">  删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script>
+    $(document).ready(function() {
+        $(".contact-box").each(function() {
+            animationHover(this, "pulse")
+        })
+    });
+    </script>
+</body>
+
+</html>

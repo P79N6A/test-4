@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡券管理</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">卡券管理</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>所有卡券</h5>
+                        <div class="ibox-tools">
+                            <a href="ticket_add.html" class="btn btn-primary btn-xs">创建卡券</a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-3 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">全部类型</option>
+                                    <option value="1">选项1</option>
+                                    <option value="2">选项2</option>
+                                    <option value="3">选项3</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">全部状态</option>
+                                    <option value="1">选项1</option>
+                                    <option value="2">选项2</option>
+                                    <option value="3">选项3</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>卡券</th>
+                                        <th>数量</th>
+                                        <th>使用说明</th>
+                                        <th>发放时间/状态</th>
+                                        <th>推荐</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="badge badge-success">体验券</span>
+                                            <br/>我是名称
+                                            <br/>ID:8888
+                                        </td>
+                                        <td>
+                                            发放 10
+                                            <br/> 已领取 20
+                                        </td>
+                                        <td>
+                                            有效期：2015-11-21至2016-12-20
+                                            <br/> 使用说明
+                                        </td>
+                                        <td>
+                                            2016-10-24 09:59:23 开始发放
+                                            <br/>
+                                            <span class="label label-primary">正在开放领取</span>
+                                        </td>
+                                        <td>
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked class="onoffswitch-checkbox" id="rec1">
+                                                    <label class="onoffswitch-label" for="rec1">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">操作 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="ticket_edit.html#" class="font-bold">修改</a>
+                                                    </li>
+                                                    <li><a href="ticket_post.html">发放</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="buttons.html#">下架</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="badge badge-warning">优惠券</span>
+                                            <br/>我是名称
+                                            <br/>ID: 8888
+                                            <br/><span class="text-danger">折扣: 0.1</span>
+                                        </td>
+                                        <td>
+                                            发放 10
+                                            <br/> 已领取 20
+                                        </td>
+                                        <td>
+                                            有效期：2015-11-21至2016-12-20
+                                            <br/> 使用说明
+                                        </td>
+                                        <td>
+                                            2016-10-24 09:59:23 开始发放
+                                            <br/>
+                                            <span class="label label-default">已下架</span>
+                                        </td>
+                                        <td>
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="rec2">
+                                                    <label class="onoffswitch-label" for="rec2">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="badge badge-danger">现金券</span>
+                                            <br/>我是名称
+                                            <br/>ID:8888
+                                            <br/><span class="text-danger">面额: ￥88</span>
+                                        </td>
+                                        <td>
+                                            发放 10
+                                            <br/> 已领取 20
+                                        </td>
+                                        <td>
+                                            有效期：2015-11-21至2016-12-20
+                                            <br/> 使用说明
+                                        </td>
+                                        <td>
+                                            2016-10-24 09:59:23 开始发放
+                                            <br/>
+                                            <span class="label label-primary">正在开放领取</span>
+                                        </td>
+                                        <td>
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="rec3">
+                                                    <label class="onoffswitch-label" for="rec3">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">操作 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="ticket_edit.html#" class="font-bold">修改</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="buttons.html#">下架</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-right">
+                            <div class="btn-group">
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button class="btn btn-white active">1</button>
+                                <button class="btn btn-white ">2</button>
+                                <button class="btn btn-white">3</button>
+                                <button class="btn btn-white">4</button>
+                                <button class="btn btn-white">5</button>
+                                <button class="btn btn-white">6</button>
+                                <button class="btn btn-white">7</button>
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+</body>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+</html>

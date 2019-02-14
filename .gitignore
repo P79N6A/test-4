@@ -1,0 +1,16 @@
+/vendor
+/node_modules
+.env
+sftp-config.json
+.idea/
+app/Http/Controllers/TestController.php
+upload/
+public/upload/
+.phpintel/
+composer.lock
+storage
+.htaccess
+404.html
+index.html
+public/.user.ini
+public/.well-known/

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摇一摇活动</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">摇一摇活动</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>活动详细</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2>双11摇一摇抽大奖活动</h2>
+                        <p>
+                            共有 6 家商户已报名
+                        </p>
+                        <p>
+                            <small class="label label-primary"><i class="fa fa-clock-o"></i> 进行中</small>
+                            <small class="label label-default"><i class="fa fa-clock-o"></i> 进行中</small>
+                        </p>
+                        <p>
+                            <i class="fa fa-clock-o"></i> 开始时间: 2016.08.24 00:00
+                        </p>
+                        <p>
+                            <i class="fa fa-clock-o"></i> 结束时间: 2016.08.31 00:00
+                        </p>
+                        <h4>介绍</h4>
+                        <p>
+                            商家出资，单品优惠，投放在以下渠道：
+                            <br/>1、支付成功页
+                            <br/>2、商家店铺详情页
+                            <br/>3、亲子频道页
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>已投放奖品</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>类型</th>
+                                    <th>状态名称</th>
+                                    <th>剩余数量</th>
+                                    <th>概率</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>卡券</td>
+                                    <td>1元代金券</td>
+                                    <td>
+                                        1231
+                                    </td>
+                                    <td>
+                                        80%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>套餐</td>
+                                    <td>100元10币</td>
+                                    <td>
+                                        1231
+                                    </td>
+                                    <td>
+                                        80%
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>投放奖品</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <label>投放数量</label>
+                            <input type="text" class="form-control" placeholder="将从总库存中扣除">
+                        </div>
+                        <div class="form-group">
+                            <label>中奖概率</label>
+                            <input type="text" class="form-control" placeholder="小数点后一位小数，如：0.2">
+                        </div>
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">卡券</a>
+                                </li>
+                                <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">商品</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="panel-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>卡券名称</th>
+                                                    <th>当前库存</th>
+                                                    <th>
+                                                        选中
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1元代金券</td>
+                                                    <td>
+                                                        1231
+                                                    </td>
+                                                    <td>
+                                                        <div class="radio radio-info radio-inline">
+                                                            <input type="radio" id="ticket1" value="option1" name="ticket">
+                                                            <label for="ticket1">折扣券</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane">
+                                    <div class="panel-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>商品名称</th>
+                                                    <th>当前库存</th>
+                                                    <th>
+                                                        选中
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1元代金券</td>
+                                                    <td>
+                                                        1231
+                                                    </td>
+                                                    <td>
+                                                        <div class="radio radio-info radio-inline">
+                                                            <input type="radio" id="package1" value="option1" name="package">
+                                                            <label for="package1">折扣券</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <button class="btn btn-sm btn-primary" type="button">确定投入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建门店</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">门店管理</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <h5>创建门店</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="form-group">
+                                    <label>品牌</label>
+                                    <div class="input-group">
+                                        世宇乐园
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>门店名称</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>门店系统ID</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>门店电话</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>门店描述</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>门店首图</label>
+                                    <div class="input-group">
+                                        <button type="button" class="btn btn-default btn-sm"> 上传 </button>
+                                        <div class="ibox-content no-padding border-left-right" style="margin-top:10px">
+                                            <img alt="image" class="img-responsive" src="img/profile_big.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>相册图片</label>
+                                    <div class="input-group">
+                                        <button type="button" class="btn btn-default btn-sm"> 上传 </button>
+                                        <div style="margin-top:10px">
+                                            <div class="file-box">
+                                                <div class="file">
+                                                    <span class="corner"></span>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="img/p1.jpg">
+                                                    </div>
+                                                    <div class="file-name text-center">
+                                                        <button class="btn btn-warning btn-circle" type="button"><i class="fa fa-times"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-box">
+                                                <div class="file">
+                                                    <span class="corner"></span>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="img/p1.jpg">
+                                                    </div>
+                                                    <div class="file-name text-center">
+                                                        <button class="btn btn-warning btn-circle" type="button"><i class="fa fa-times"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-box">
+                                                <div class="file">
+                                                    <span class="corner"></span>
+                                                    <div class="image">
+                                                        <img alt="image" class="img-responsive" src="img/p1.jpg">
+                                                    </div>
+                                                    <div class="file-name text-center">
+                                                        <button class="btn btn-warning btn-circle" type="button"><i class="fa fa-times"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label>门店地址</label>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="province" name="account">
+                                                <option value="1">广东省</option>
+                                                <option value="">省</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="city" name="account">
+                                                <option value="2">广州市</option>
+                                                <option value="">市</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="district" name="account">
+                                                <option value="3">海珠区</option>
+                                                <option value="">区</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="address" placeholder="请输入详细地址" value="客村地铁站"> <span class="input-group-btn"> <button type="button" id="reposition" class="btn btn-primary">定位
+                                        </button> </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div id="map" style="height:300px"></div>
+                                    <input id="lng" name="lng" type="hidden" value="113.321106" />
+                                    <input id="lat" name="lat" type="hidden" value="23.096012" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <button class="btn btn-sm btn-primary" type="submit">创建门店</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/plugins/prettyfile/bootstrap-prettyfile.js"></script>
+    <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/switchery/switchery.js"></script>
+    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="js/plugins/cropper/cropper.min.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=eb1bae2720fd8090364bd9845b48ac6b"></script>
+    <script type="text/javascript">
+    var map = new AMap.Map("map", {
+        resizeEnable: true,
+        //center: [116.397428, 39.90923],
+        zoom: 8
+    });
+    var marker = new AMap.Marker({
+        position: map.getCenter(),
+        draggable: true,
+        cursor: 'move',
+        raiseOnDrag: true
+    });
+    var MGeocoder;
+    //加载地理编码插件
+    AMap.service(["AMap.Geocoder"], function() {
+        MGeocoder = new AMap.Geocoder();
+    });
+    marker.setMap(map);
+    AMap.event.addListener(marker, "mouseup", function() {
+        var p = marker.getPosition();
+        $("#lng").val(p.lng);
+        $('#lat').val(p.lat);
+    });
+    $("#reposition").on("click", function() {
+        var address = ($('#province option:gt(0):selected').html() || '') + ($('#city option:gt(0):selected').html() || '') + ($('#district option:gt(0):selected').html() || '') + $('#address').val();
+        MGeocoder.getLocation(address, function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                //console.log(result);
+                //var p = new AMap.LngLat(result.geocodes[0].location.lng, result.geocodes[0].location.lat);
+                
+                //map.setCenter(p);
+                map.setZoomAndCenter(16, result.geocodes[0].location);
+                marker.setPosition(result.geocodes[0].location);
+                $("#lng").val(result.geocodes[0].location.lng);
+                $('#lat').val(result.geocodes[0].location.lat);
+            }
+        });
+    });
+
+    if($("#lng").val() != "" || $("#lat").val() != ""){
+        var p = new AMap.LngLat($("#lng").val(), $("#lat").val());
+        map.setCenter(p);
+        map.setZoomAndCenter(16, p);
+        marker.setPosition(p);
+    }
+    </script>
+</body>
+
+</html>

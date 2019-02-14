@@ -1,0 +1,22 @@
+{
+    "name": "mmtk",
+    "version": "0.0.0",
+    "description": "麦麦天空接口文档",
+    "private": true,
+    "scripts": {
+        "prod": "gulp --production",
+        "dev": "gulp watch"
+    },
+    "devDependencies": {
+        "bootstrap-sass": "^3.0.0",
+        "grunt": "^1.0.1",
+        "grunt-apidoc": "^0.11.0",
+        "gulp": "^3.9.1",
+        "laravel-elixir": "^5.0.0"
+    },
+    "apidoc": {
+        "title": "麦麦接口文档",
+        "url": "",
+        "sampleUrl": ""
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>套餐管理</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="row content-tabs">
+        <nav class="page-tabs J_menuTabs">
+            <div class="page-tabs-content">
+                <a href="javascript:;" class="active J_menuTab" data-id="home.html">套餐管理</a>
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>所有套餐</h5>
+                        <div class="ibox-tools">
+                            <a href="goods_edit.html" class="btn btn-primary btn-xs">创建套餐</a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-6 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">状态</option>
+                                    <option value="1">选项1</option>
+                                    <option value="2">选项2</option>
+                                    <option value="3">选项3</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>套餐名称/套餐ID/二维码</th>
+                                        <th>库存/销量</th>
+                                        <th>价格</th>
+                                        <th>秒杀</th>
+                                        <th>创建时间/过期时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="goods_view.html">100元20币</a>
+                                            <br/> 120
+                                            <br/>
+                                            <a href="goods_view.html">
+                                                <i class="fa fa-qrcode" style="font-size:18px;"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            库:123
+                                            <br/> 销: 20
+                                        </td>
+                                        <td>
+                                            ￥1.5
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle" aria-expanded="false">是 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">                                                
+                                                    <li><a href="goods_sekill_edit.html">编辑</a></li>
+                                                    <li><a href="#">退出</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            2016-12-06 03:00:00
+                                            <br/>
+                                            <span class="label label-warning">2016-12-06 03:00:00 过期</span>
+                                        </td>
+                                        <td>
+                                            <a href="goods_edit.html" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 修改 </a>
+                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-trash"></i> 删除 </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="goods_view.html">100元20币</a>
+                                            <br/> 120
+                                            <br/>
+                                            <a href="goods_view.html">
+                                                <i class="fa fa-qrcode" style="font-size:18px;"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            库:123
+                                            <br/> 销: 20
+                                        </td>
+                                        <td>
+                                            ￥1.5
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button data-toggle="dropdown" class="btn btn-default btn-xs dropdown-toggle" aria-expanded="false">否 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="goods_sekill_edit.html">加入</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            2016-12-06 03:00:00
+                                            <br/>
+                                            <span class="label label-warning">2016-12-06 03:00:00 过期</span>
+                                        </td>
+                                        <td>
+                                            <a href="goods_edit.html" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> 修改 </a>
+                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-trash"></i> 删除 </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-right">
+                            <div class="btn-group">
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button class="btn btn-white active">1</button>
+                                <button class="btn btn-white ">2</button>
+                                <button class="btn btn-white">3</button>
+                                <button class="btn btn-white">4</button>
+                                <button class="btn btn-white">5</button>
+                                <button class="btn btn-white">6</button>
+                                <button class="btn btn-white">7</button>
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+</body>
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+
+</html>
